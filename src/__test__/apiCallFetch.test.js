@@ -1,4 +1,4 @@
-const fetchApi = require("./apiCallFetch");
+const fetchApi = require("../apiCallFetch");
 
 describe("mock api calls", () => {
   test("check api response", async () => {

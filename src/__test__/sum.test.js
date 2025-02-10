@@ -1,4 +1,4 @@
-const sum = require("./sum");
+const sum = require("../sum");
 beforeAll(() => {
   console.log("connection created");
 });
