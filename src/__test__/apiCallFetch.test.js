@@ -43,4 +43,9 @@ describe("mock api calls", () => {
       },
     ]);
   });
+  test("handles fetch failure", async () => {
+    global.fetch = jest.fn(() => Promise.reject(new Error("Network error")));
+
+    await expect(fetchApi()).rejects.toThrow("Network error");
+  });
 });
